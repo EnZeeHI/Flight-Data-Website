@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <script src= "./src/JS/main.js"></script>
+        <link rel="stylesheet" href="./src/CSS/index.css">
+
+</head>
+<title>
+    Flight Data 
+</title>
+<body>
+    <h1> Flight Data Interactive Infographic  </h1>
+    
+    <div>
+        
+       <span>Select a year you want to compare</span><br>
+        <select name="Year" id= "yearSelect" size= "4">
+            <option value="1997">1997</option>
+            <option value="1998">1998</option>
+            <option value="1999">1999</option>
+            <option value="2000">2000</option>
+            <option value="2001">2001</option>
+            <option value="2002">2002</option>
+            <option value="2003">2003</option>
+            <option value="2004">2004</option>
+            <option value="2005">2005</option>
+            <option value="2006">2006</option>
+            <option value="2007">2008</option>
+            <option value="2008">2000</option>
+            <option value="2009">2009</option>
+            <option value="2010">2010</option>
+            <option value="2011">2011</option>
+            <option value="2012">2012</option>
+            <option value="2013">2013</option>
+            <option value="2014">2014</option>
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019" selected>2019</option>
+                
+        </select>
+    </div>
+    <div id= "dataPanelPassengers">
+        <span id = panel1Header>Passengers</span><br>
+        <span id = panel1Text1>The amount of passengers using the airport in </span>
+        <span id = panel1Text2></span><br>
+        <img src = src/Images/Image1.png id="chartElement1" class ="barChartElement">
+        <span id = "panel1Element1Text" class = "barAmount" ></span><br>
+        <img src = src/Images/Image2.png id="chartElement2" class ="barChartElement">
+        <span id = "panel1Element2Text" class = "barAmount" ></span><br>
+        <img src = src/Images/Image3.png id="chartElement3" class ="barChartElement">
+        <span id = "panel1Element3Text" class = "barAmount" ></span><br>
+        <img src = src/Images/Image4.png id="chartElement4" class ="barChartElement">
+        <span id = "panel1Element4Text" class = "barAmount" ></span><br>
+        <img src = src/Images/Image5.png id="chartElement5" class ="barChartElement">
+        <span id = "panel1Element5Text" class = "barAmount" ></span><br>
+        <img src = src/Images/Image6.png id="chartElement6" class ="barChartElement">
+        <span id = "panel1Element6Text" class = "barAmount" ></span><br>
+        
+    </div>
+    <div id= "dataPanelFlights">
+            <span id = panel2Header>Flights</span><br>
+            <span id = panel2Text1>The amount of flights in </span>
+            <span id = panel2Text2></span><br>
+            <img src = src/Images/Image1.png id="chart2Element1" class ="barChartElement">
+            <span id = "panel2Element1Text" class = "barAmount" ></span><br>
+            <img src = src/Images/Image2.png id="chart2Element2" class ="barChartElement">
+            <span id = "panel2Element2Text" class = "barAmount" ></span><br>
+            <img src = src/Images/Image3.png id="chart2Element3" class ="barChartElement">
+            <span id = "panel2Element3Text" class = "barAmount" ></span><br>
+            <img src = src/Images/Image4.png id="chart2Element4" class ="barChartElement">
+            <span id = "panel2Element4Text" class = "barAmount" ></span><br>
+            <img src = src/Images/Image5.png id="chart2Element5" class ="barChartElement">
+            <span id = "panel2Element5Text" class = "barAmount" ></span><br>
+            <img src = src/Images/Image6.png id="chart2Element6" class ="barChartElement">
+            <span id = "panel2Element6Text" class = "barAmount" ></span><br>
+
+    </div>
+    <div id= "dataPanelCargo">
+            <span id = panel3Header>Cargo</span><br>
+            <span id = panel3Text1>The amount of cargo transported in </span>
+            <span id = panel3Text2></span><br>
+            <img src = src/Images/Image1.png id="chart3Element1" class ="barChartElement">
+            <span id = "panel3Element1Text" class = "barAmount" ></span><br>
+            <img src = src/Images/Image2.png id="chart3Element2" class ="barChartElement">
+            <span id = "panel3Element2Text" class = "barAmount" ></span><br>
+            <img src = src/Images/Image3.png id="chart3Element3" class ="barChartElement">
+            <span id = "panel3Element3Text" class = "barAmount" ></span><br>
+            <img src = src/Images/Image4.png id="chart3Element4" class ="barChartElement">
+            <span id = "panel3Element4Text" class = "barAmount" ></span><br>
+            <img src = src/Images/Image5.png id="chart3Element5" class ="barChartElement">
+            <span id = "panel3Element5Text" class = "barAmount" ></span><br>
+            <img src = src/Images/Image6.png id="chart3Element6" class ="barChartElement">
+            <span id = "panel3Element6Text" class = "barAmount" ></span><br>
+
+    </div>
+    <div id= "dataPanelMail">
+            <span id = panel4Header>Mail</span><br>
+            <span id = panel4Text1>The amount of mail transported in</span>
+            <span id = panel4Text2></span><br>
+            <img src = src/Images/Image1.png id="chart4Element1" class ="barChartElement">
+            <span id = "panel4Element1Text" class = "barAmount" ></span><br>
+            <img src = src/Images/Image2.png id="chart4Element2" class ="barChartElement">
+            <span id = "panel4Element2Text" class = "barAmount" ></span><br>
+            <img src = src/Images/Image3.png id="chart4Element3" class ="barChartElement">
+            <span id = "panel4Element3Text" class = "barAmount" ></span><br>
+            <img src = src/Images/Image4.png id="chart4Element4" class ="barChartElement">
+            <span id = "panel4Element4Text" class = "barAmount" ></span><br>
+            <img src = src/Images/Image5.png id="chart4Element5" class ="barChartElement">
+            <span id = "panel4Element5Text" class = "barAmount" ></span><br>
+            <img src = src/Images/Image6.png id="chart4Element6" class ="barChartElement">
+            <span id = "panel4Element6Text" class = "barAmount" ></span><br>
+
+    </div>
+    <div id = "combinedDataPanel">
+        <span id = combinedPanelAirport></span>
+        <button id = "allAirportsBtn" class = "airportBtns" onclick ="AirportSelected('A045844')"> All Airports</button>
+        <button id = "schipholBtn" class = "airportBtns" onclick = "AirportSelected('A043590')">Schiphol</button>
+        <button id = "theHagueBtn" class = "airportBtns" onclick = "AirportSelected('A043596')">The Hague</button>
+        <button id = "eindhovenBtn" class = "airportBtns" onclick = "AirportSelected('A043591')">Eindhoven</button>
+        <button id = "aachenBtn" class = "airportBtns" onclick = "AirportSelected('A043595')">Aachen</button>
+        <button id = "eldeBtn" class = "airportBtns" onclick = "AirportSelected('A043593')">Elde</button><br>
+        <span id = "totalPassengersHTML"> Total Passangers in </span><br>
+        <span id = "totalFlightsHTML"> Total Flights in </span><br>
+        <span id = "totalCargoHTML"> Total Cargo in </span><br>
+        <span id = "totalMailHTML">Total Mail in</span> <br>
+    </div>
+
+</body>
+
+
+
+
+</html>
